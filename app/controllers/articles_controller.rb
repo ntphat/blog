@@ -40,7 +40,7 @@ class ArticlesController < ApplicationController
 		redirect_to articles_path
 	end
 	
-	http_basic_authenticate_with name: "dhhh", password: "secret", except: [:index, :show]
+	#http_basic_authenticate_with name: "dhhh", password: "secret", except: [:index, :show]
 	private
 		def article_params
 			params.require(:article).permit(:title, :text)
